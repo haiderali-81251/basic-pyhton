@@ -1,7 +1,7 @@
 def percent(obt,total):
     percentage=(obt/total)*100
     print(f"Percentage : {percentage:.2f}%")
-    return percentage
+    return round(percentage, 2)
 
 def grade(percentage):
     if (percentage>=80 and percentage<=100):
@@ -44,11 +44,12 @@ for i in range(n):
 
 student.sort(key=lambda x : x[1])
 
-print(f"1st position goes to {student[-1][0]} at {student[-1][1]}")
-print(f"2nd position goes to {student[-2][0]} at {student[-2][1]}")
-print(f"3rd position goes to {student[-3][0]} at {student[-3][1]}")
+print(f"1st position goes to {student[-1][0]} at {student[-1][1]}%")
+print(f"2nd position goes to {student[-2][0]} at {student[-2][1]}%")
+print(f"3rd position goes to {student[-3][0]} at {student[-3][1]}%")
 
 print("--------------------------------------------------------")
+
 
 
 
