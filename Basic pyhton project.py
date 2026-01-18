@@ -23,7 +23,8 @@ n=int(input("Enter no of students: "))
 print("----------------------------------------------")
 
 for i in range(n):
-
+    
+    print(f"\nEnter details for student {i+1}:")
     name=str(input("Enter student's name :"))
     
     marks_maths=int(input("Enter marks of maths: "))
@@ -48,5 +49,6 @@ print(f"2nd position goes to {student[-2][0]} at {student[-2][1]}")
 print(f"1st position goes to {student[-3][0]} at {student[-3][1]}")
 
 print("--------------------------------------------------------")
+
 
 
